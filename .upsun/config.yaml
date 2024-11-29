@@ -20,7 +20,7 @@ applications:
     # More information: https://docs.upsun.com/create-apps/app-reference.html#relationships
     relationships:
       postgresql:
-      redis-persistent:
+      redis:
       
 
     # Mounts define directories that are writable after the build is complete.
@@ -128,10 +128,10 @@ applications:
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 services:
   postgresql:
-    type: postgresql:15 # All available versions are: 15, 14, 13, 12, 11
+    type: postgresql:14 # All available versions are: 15, 14, 13, 12, 11
 
-  redis-persistent:
-    type: redis-persistent:7.0 # All available versions are: 7.0, 6.2
+  redis:
+    type: redis:7.0 # All available versions are: 7.0, 6.2
 
   
 
